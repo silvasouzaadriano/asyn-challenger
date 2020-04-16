@@ -7,6 +7,8 @@ import { Container } from './styles';
 
 import api from './api';
 
+import arrowIcon from './assets/arrow_icon.png';
+
 
 
 export default function App() {
@@ -106,7 +108,8 @@ export default function App() {
                  value={loadPostalCode}
                  onChange={handleInputChange}
           />
-          <button type="submit"><span>ENVIAR</span></button>
+          <button type="submit"><img src={arrowIcon} /><span>ENVIAR</span></button>
+          
         </Form>
         <div className="dados">
           <label className="cep">CEP: <span>{postalCode}</span></label>

@@ -138,7 +138,10 @@ export const Container = styled.div`
       }
     }
     
+    
+
     button {
+      display: flex;
       width: 95px;
       height: 40px;
       left: 221px;
@@ -147,13 +150,24 @@ export const Container = styled.div`
       background: #BB6BD9;
       border-radius: 30px;
 
-     
+      img {
+        width: 15px;
+        height: 15px;
+        left: 236px;
+        top: 392px;
+        margin-top: 10px;
+        background: #9B51E0;
+        border-radius: 50px;
+        
+      }
 
       span {
         width: 46px;
         height: 15px;
         left: 261px;
         top: 393px;
+        margin-top: 10px;
+        margin-left: 8px;
 
         font-family: Roboto;
         font-style: normal;
@@ -164,7 +178,6 @@ export const Container = styled.div`
         color: #F2F2F2;
       }
     }
-    
     
   }
 
