@@ -4,7 +4,7 @@ import 'react-toastify/dist/ReactToastify.css';
 
 
 export const Container = styled.div`
-  max-width: 600px;
+  max-width: 800px;
   margin: 50px auto;
   display: flex;
   flex-direction: column;
@@ -235,7 +235,6 @@ export const Container = styled.div`
     margin-right: 180px;
 
     .cep {
-      width: 150%;
       height: 23px;
       left: 42px;
       top: 456px;
@@ -250,7 +249,6 @@ export const Container = styled.div`
     }
 
     .logradouro {
-      width: 150%;
       height: 23px;
       left: 42px;
       top: 489px;
@@ -265,7 +263,6 @@ export const Container = styled.div`
     }
 
     .uf {
-      width: 150%;
       height: 23px;
       left: 42px;
       top: 522px;
