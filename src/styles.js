@@ -4,7 +4,6 @@ import 'react-toastify/dist/ReactToastify.css';
 
 
 export const Container = styled.div`
-  max-width: 800px;
   margin: 50px auto;
   display: flex;
   flex-direction: column;
@@ -72,8 +71,6 @@ export const Container = styled.div`
     display: flex;
     align-items: center;
     margin-top: 30px;
-
-    
 
     .ladoEsquerdo {
       width: 10px;
