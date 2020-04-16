@@ -117,7 +117,7 @@ export default function App() {
                  value={loadPostalCode}
                  onChange={handleInputChange}
           />
-          <button type="submit"><img src={arrowIcon} /><span>ENVIAR</span></button>
+          <button type="submit"><img src={arrowIcon} alt="Arrow Icon"/><span>ENVIAR</span></button>
           
         </Form>
         <div className="dados">
