@@ -1,0 +1,16 @@
+* layout proposto: https://www.figma.com/file/XMWLGAFZAg1ujcosnwyJwU/Untitled?node-id=0%3A1 */
+
+// 1ª fase
+// criar um contador inicializado em 0 e botões de incremento e decremento de valor
+
+// 2ª fase
+// achar uma imagem no google a sua escolha, adicionar a tela (logo acima ) e deixa-la com as bordas arredondadas
+// sugerido: https://computerworld.com.br/wp-content/uploads/2020/01/as-linguagens-de-programacao-2020.jpg
+
+// 3ª fase
+// - Quando o número for impar, deve ficar vermelho e em negrito
+// - Quando for par, deve ficar azul e itálico
+
+// 4ª fase
+// - Criar um input na tela que recebe uma string e um botão que envia o cep digitado no input e mostra o CEP, o logradouro e estado
+// - viacep.com.br/ws/01001000/json/
