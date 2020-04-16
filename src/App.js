@@ -98,8 +98,17 @@ export default function App() {
         <div className="botoes">
           <div className="ladoEsquerdo"></div>
           <div className="adicionar">
-            <button onClick={() => increment(valor)}>Adicionar</button></div>
-          <div className="remover"><button onClick={() => decrement(valor)}>Remover</button></div>
+            <button onClick={() => increment(valor)}>
+              Adicionar
+              <div></div>
+            </button>
+          </div>
+          <div className="remover">
+            <button onClick={() => decrement(valor)}>
+              Remover
+              <div></div>
+            </button>
+          </div>
           <div className="ladoDireito"></div>
         </div>
         <Form onSubmit={handleSubmit}>

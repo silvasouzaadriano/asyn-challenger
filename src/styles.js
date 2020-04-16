@@ -73,6 +73,8 @@ export const Container = styled.div`
     align-items: center;
     margin-top: 30px;
 
+    
+
     .ladoEsquerdo {
       width: 10px;
       height: 100px;
@@ -81,15 +83,37 @@ export const Container = styled.div`
       background: #2F80ED;
     }
 
-    .adicionar button {
-      width: 100px;
-      height: 100px;
-      left: 28px;
-      top: 238px;
-      background: #E0E0E0;
-      border-radius: 0px 5px 5px 0px;
-      margin-right: 50px;
-    }
+    .adicionar {
+
+      button {
+        width: 100px;
+        height: 100px;
+        left: 28px;
+        top: 238px;
+        background: #E0E0E0;
+        border-radius: 0px 5px 5px 0px;
+        margin-right: 50px;
+
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 23px;
+      }
+
+      div {
+        display: flex;
+        margin-top: -65px;
+        margin-left: 57px;
+        width: 24px;
+        height: 21px;
+        left: 96px;
+        top: 244px;
+        background: #2F80ED;
+        border: 1px solid #2F80ED;
+        border-radius: 10px 20px;
+      }      
+    } 
 
     .ladoDireito {
       width: 10px;
@@ -100,13 +124,35 @@ export const Container = styled.div`
       border-radius: 0px;
     }
 
-    .remover button {
-      width: 100px;
-      height: 100px;
-      left: 191px;
-      top: 238px;
-      background: #E0E0E0;
-      border-radius: 5px 0px 0px 5px;
+    .remover {
+
+      button {
+        width: 100px;
+        height: 100px;
+        left: 191px;
+        top: 238px;
+        background: #E0E0E0;
+        border-radius: 5px 0px 0px 5px;
+
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 23px;
+      }
+
+      div {
+        display: flex;
+        margin-top: -65px;
+        margin-left: 5px;
+        width: 24px;
+        height: 21px;
+        left: 96px;
+        top: 244px;
+        background: #EB5757;
+        border: 1px solid #EB5757;
+        border-radius: 10px 20px;
+      }
 
     }
 
@@ -167,7 +213,7 @@ export const Container = styled.div`
         left: 261px;
         top: 393px;
         margin-top: 10px;
-        margin-left: 8px;
+        margin-left: 10px;
 
         font-family: Roboto;
         font-style: normal;
