@@ -235,7 +235,7 @@ export const Container = styled.div`
     margin-right: 180px;
 
     .cep {
-      width: 100%;
+      width: 150%;
       height: 23px;
       left: 42px;
       top: 456px;
@@ -250,7 +250,7 @@ export const Container = styled.div`
     }
 
     .logradouro {
-      width: 100%;
+      width: 150%;
       height: 23px;
       left: 42px;
       top: 489px;
@@ -265,7 +265,7 @@ export const Container = styled.div`
     }
 
     .uf {
-      width: 100%;
+      width: 150%;
       height: 23px;
       left: 42px;
       top: 522px;
