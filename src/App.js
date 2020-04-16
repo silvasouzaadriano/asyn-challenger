@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from "react";
-import { toast } from 'react-toastify';
+import { toast, ToastContainer } from 'react-toastify';
 
 import { Form, Input } from '@rocketseat/unform';
 
@@ -17,6 +17,7 @@ export default function App() {
   const [postalCode, setPostalCode] = useState('');
   const [address, setAddress] = useState('');
   const [stateCode, setStateCode] = useState('');
+  const [loadPostalCode, setLoadPostalCode] = useState('');
   
 
   useEffect(() => {
@@ -58,6 +59,10 @@ export default function App() {
     setFontWeight(fontWeight)      
   }
 
+  function handleInputChange(e) {
+    setLoadPostalCode(e.target.value);
+  };
+
   async function handleSubmit(data) {
     try {
       if(data.cep) {
@@ -66,20 +71,25 @@ export default function App() {
         setPostalCode(response.data.cep);
         setAddress(response.data.logradouro);
         setStateCode(response.data.uf);
+        setLoadPostalCode('');
+
       } else {    
 
         setPostalCode();
         setAddress();
         setStateCode();
+        setLoadPostalCode('');
       }
     } catch (e) {
-      toast.error('Por favor informe um CEP válido. Examplo: 88058500 ou 88058-500');
+      toast.error('Por favor informe um CEP válido. Exemplo: 88058500 ou 88058-500');
+      setLoadPostalCode('');
     }
   }
 
   return (
     <div className="App">
       <Container>
+        <ToastContainer autoClose={3000} />
         <img src="https://computerworld.com.br/wp-content/uploads/2020/01/as-linguagens-de-programacao-2020.jpg" alt="imagem" />
         <p>Contador</p>
         <div className="valor"><div style={{color: fontColor, FontStyle: fontStyle, fontWeight: fontWeight}}>{valor}</div></div>
@@ -91,7 +101,11 @@ export default function App() {
           <div className="ladoDireito"></div>
         </div>
         <Form onSubmit={handleSubmit}>
-          <Input name="cep" placeholder="Digite o cep" />
+          <Input name="cep"
+                 placeholder="Digite o cep"
+                 value={loadPostalCode}
+                 onChange={handleInputChange}
+          />
           <button type="submit"><span>ENVIAR</span></button>
         </Form>
         <div className="dados">
@@ -99,8 +113,7 @@ export default function App() {
           <label className="logradouro">Logradouro: <span>{address}</span></label>
           <label className="uf">UF:  <span>{stateCode}</span></label>
         </div>
-        
-      </ Container>  
+      </ Container>
     </div>
   );
 }
