@@ -10,6 +10,12 @@ export const Container = styled.div`
   flex-direction: column;
   align-items: center;
 
+  button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+  }
+
   img {
     margin-bottom: 30px;
     width: 100px;
