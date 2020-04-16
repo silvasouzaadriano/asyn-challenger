@@ -4,6 +4,7 @@ import 'react-toastify/dist/ReactToastify.css';
 
 
 export const Container = styled.div`
+  width: 100%;
   margin: 50px auto;
   display: flex;
   flex-direction: column;

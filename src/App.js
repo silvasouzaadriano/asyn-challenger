@@ -123,7 +123,7 @@ export default function App() {
         <div className="dados">
           <label className="cep">CEP: <span>{postalCode}</span></label>
           <label className="logradouro">Logradouro: <span>{address}</span></label>
-          <label className="uf">UF:  <span>{stateCode}</span></label>
+          <label className="uf">UF: <span>{stateCode}</span></label>
         </div>
       </ Container>
     </div>
